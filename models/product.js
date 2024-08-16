@@ -14,6 +14,8 @@ const ProductSchema = new Schema({
         type: Number,
         required:[true, 'The field weight is required'],
     }
+},{
+versionKey:false
 }) 
 
 module.exports = model('Prduct',ProductSchema,'product')//primero define la clase, el segundo al nombre de la esquema, tercero nombre de la collection
